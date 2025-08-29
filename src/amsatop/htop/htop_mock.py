@@ -1,10 +1,10 @@
 from typing import override
 
-from htop.htop import Htop
-from mothers.hup import HupMother
-from mothers.priority import PriorityMother
-from mothers.process import ProcessMother
-from schemas.process import Process
+from amsatop.htop.htop import Htop
+from amsatop.mothers.hup import HupMother
+from amsatop.mothers.priority import PriorityMother
+from amsatop.mothers.process import ProcessMother
+from amsatop.schemas.process import Process
 
 
 class HtopMock(Htop):

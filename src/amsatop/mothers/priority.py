@@ -1,7 +1,7 @@
 import random
 
-from schemas.process import Process
-from schemas.process_type import ProcessType
+from amsatop.schemas.process import Process
+from amsatop.schemas.process_type import ProcessType
 
 
 class PriorityMother:

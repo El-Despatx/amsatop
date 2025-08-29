@@ -1,5 +1,5 @@
-from htop.htop_mock import HtopMock
-from tui import HtopTUI
+from amsatop.htop.htop_mock import HtopMock
+from amsatop.tui import HtopTUI
 
 
 def main():

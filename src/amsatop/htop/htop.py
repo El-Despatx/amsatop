@@ -1,7 +1,7 @@
 import os
 from abc import ABC, abstractmethod
 
-from schemas.process import Process
+from amsatop.schemas.process import Process
 
 
 class Htop(ABC):

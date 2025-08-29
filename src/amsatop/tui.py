@@ -3,7 +3,7 @@ from textual.app import App, ComposeResult
 from textual.binding import Binding
 from textual.widgets import DataTable, Footer, Header, Static
 
-from htop.htop import Htop
+from amsatop.htop.htop import Htop
 
 
 class HtopTUI(App[None]):
