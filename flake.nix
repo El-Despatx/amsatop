@@ -12,6 +12,11 @@
         inherit system; 
         config.allowUnfree = true;
       };
+      pythonEnv = pkgs.python313.withPackages (ps: with ps; [
+          sphinx
+          sphinx-rtd-theme
+          myst-parser     # optional: markdown support
+        ]);
     in {
       devShells.${system}.default = pkgs.mkShell {
         buildInputs = [ pkgs.uv ];
@@ -22,7 +27,7 @@
 
         src = ./.;
 
-        nativeBuildInputs = [ pkgs.sphinx ];
+        nativeBuildInputs = [ pythonEnv ];
 
         buildPhase = ''
           sphinx-apidoc -o docs/_apidoc src/amsatop

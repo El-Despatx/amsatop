@@ -4,8 +4,8 @@ version = "0.3.0"
 description = "Library for building your own htop from scratch, using python"
 readme = "README.md"
 authors = [
-    { name = "Oriol Agost Batalla", email = "github@agost.info" }
-    { name = "Pablo Fraile Alonso", email = "pablo@pablofraile.net" }
+    { name = "Oriol Agost Batalla", email = "github@agost.info" },
+    { name = "Pablo Fraile Alonso", email = "pablo@pablofraile.net" },
     { name = "Ferran Aran Domingo", email = "ferran@aranferran.com" }
 ]
 requires-python = ">=3.13"
@@ -13,9 +13,6 @@ dependencies = [
     "pyfiglet>=1.0.4",
     "textual>=5.3.0",
 ]
-
-[project.scripts]
-amsatop = "amsatop:main"
 
 [build-system]
 requires = ["uv_build>=0.8.13,<0.9.0"]
