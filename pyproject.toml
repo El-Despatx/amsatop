@@ -1,10 +1,12 @@
 [project]
 name = "amsatop"
-version = "0.2.0"
-description = "Add your description here"
+version = "0.3.0"
+description = "Library for building your own htop from scratch, using python"
 readme = "README.md"
 authors = [
     { name = "Oriol Agost Batalla", email = "github@agost.info" }
+    { name = "Pablo Fraile Alonso", email = "pablo@pablofraile.net" }
+    { name = "Ferran Aran Domingo", email = "ferran@aranferran.com" }
 ]
 requires-python = ">=3.13"
 dependencies = [
