@@ -25,6 +25,7 @@
         nativeBuildInputs = [ pkgs.sphinx ];
 
         buildPhase = ''
+          sphinx-apidoc -o docs/_apidoc src/amsatop
           sphinx-build -b html docs/ build/
         '';
 
