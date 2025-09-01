@@ -1,5 +1,5 @@
-Welcome to amsatop documentation!
-=================================
+Welcome to amsatop's documentation!
+===================================
 
 .. toctree::
    :maxdepth: 2
@@ -7,12 +7,11 @@ Welcome to amsatop documentation!
 
    modules
 
-
 Module Reference
 ================
 
-.. automodule:: amsatop.htop
+.. automodule:: amsatop
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :inherited-members:
