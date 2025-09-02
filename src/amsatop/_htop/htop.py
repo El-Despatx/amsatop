@@ -37,7 +37,7 @@ class Htop(ABC):
         """
         Retrieve all system processes, without the priority field
 
-        :return A list of Process objects representing all running processes.
+        :return: A list of Process objects representing all running processes.
         :raises NotImplementedError: If not implemented by subclass.
         """
         raise NotImplementedError("Prac-2.1")
@@ -47,8 +47,8 @@ class Htop(ABC):
         """
         Retrieve all system processes along with their scheduling priorities.
 
-        :return A list of Process objects with priority information.
-        :raises NotImplementedError: If not implemented by subclass.
+        :return: A list of Process objects with priority information.
+        :raises: NotImplementedError: If not implemented by subclass.
         """
         raise NotImplementedError("Prac-2.2")
 
@@ -57,7 +57,7 @@ class Htop(ABC):
         """
         Retrieve processes that are eligible to ignore the SIGHUP signal.
 
-        :return A list of Process objects that ignore the SIGHUP signal.
-        :raises NotImplementedError: If not implemented by subclass.
+        :return: A list of Process objects that ignore the SIGHUP signal.
+        :raises: NotImplementedError: If not implemented by subclass.
         """
         raise NotImplementedError("Prac-2.3")
