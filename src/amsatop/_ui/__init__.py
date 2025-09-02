@@ -7,6 +7,7 @@ def run_ui(htop: Htop = HtopMock(), refresh: int = 2) -> None:
     """
     Given an instance of htop, run the tui interface.
     By default, if no parameter is given, it launches the HtopMock implementation.
+    
     :param htop: An instance of your htop implementation
     :param refresh: The seconds between each table refresh, 2 by default
     """
