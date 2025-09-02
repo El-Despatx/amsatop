@@ -1,32 +1,32 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('../src'))
+sys.path.insert(0, os.path.abspath("../src"))
 
-project = 'amsatop'
-project_copyright = '2025-2026, UdL'
-author = 'Oriol Agost, Pablo Fraile, Ferran Aran'
-release = '0.3.0'
+project = "amsatop"
+project_copyright = "2025-2026, UdL"
+author = "Oriol Agost, Pablo Fraile, Ferran Aran"
+release = "0.3.0"
 
 extensions = [
-    'sphinx.ext.autodoc',          # Include documentation from docstrings
-    'sphinx.ext.napoleon',         # Support for Google/NumPy docstrings
-    'sphinx.ext.viewcode',         # Add links to highlighted source code
-    'sphinx.ext.autosummary',      # Generate summary tables
+    "sphinx.ext.autodoc",  # Include documentation from docstrings
+    "sphinx.ext.napoleon",  # Support for Google/NumPy docstrings
+    "sphinx.ext.viewcode",  # Add links to highlighted source code
+    "sphinx.ext.autosummary",  # Generate summary tables
 ]
 
 autosummary_generate = True  # Turn on autosummary generation
 
-templates_path = ['_templates']
+templates_path = ["_templates"]
 exclude_patterns = []
 
 autodoc_default_options = {
-    'members': True,
-    'undoc-members': True,
-    'show-inheritance': True,
+    "members": True,
+    "undoc-members": True,
+    "show-inheritance": True,
 }
 
 # -- HTML output ----------------------------------------------------------
-html_theme = 'sphinx_rtd_theme'
-html_static_path = ['_static']
-html_favicon = 'favicon.ico'
+html_theme = "sphinx_rtd_theme"
+html_static_path = ["_static"]
+html_favicon = "favicon.ico"

@@ -37,7 +37,9 @@ class HtopMock(Htop):
             Process(pid=13, command="zsh", type=Type.THREAD, priority=None),
             Process(pid=14, command="docker", type=Type.KTHREAD, priority=None),
         ]
-        return random.sample(not_real_processes, min(self.RETURN_PROCESSES, len(not_real_processes)))
+        return random.sample(
+            not_real_processes, min(self.RETURN_PROCESSES, len(not_real_processes))
+        )
 
     @override
     def get_priorities(self) -> list[Process]:
@@ -56,7 +58,9 @@ class HtopMock(Htop):
             Process(pid=26, command="python", type=Type.TASK, priority=7),
             Process(pid=27, command="java", type=Type.KTHREAD, priority=6),
         ]
-        return random.sample(not_real_processes, min(self.RETURN_PROCESSES, len(not_real_processes)))
+        return random.sample(
+            not_real_processes, min(self.RETURN_PROCESSES, len(not_real_processes))
+        )
 
     @override
     def get_hup(self) -> list[Process]:
@@ -75,4 +79,6 @@ class HtopMock(Htop):
             Process(pid=39, command="python", type=Type.TASK, priority=7),
             Process(pid=40, command="java", type=Type.KTHREAD, priority=6),
         ]
-        return random.sample(not_real_processes, min(self.RETURN_PROCESSES, len(not_real_processes)))
+        return random.sample(
+            not_real_processes, min(self.RETURN_PROCESSES, len(not_real_processes))
+        )

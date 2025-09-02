@@ -18,6 +18,7 @@ class Htop(ABC):
             Defaults to "/proc", but can be overridden by setting the "PROC_FOLDER"
             environment variable. You should *allways* use this variable and not "/proc".
     """
+
     proc_folder: str
 
     def __init__(self, proc_folder: str = os.getenv("PROC_FOLDER", "/proc")) -> None:

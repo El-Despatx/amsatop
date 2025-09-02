@@ -1,5 +1,4 @@
 from dataclasses import dataclass
-
 from enum import Enum
 
 
@@ -7,6 +6,7 @@ class Type(Enum):
     """
     Enumeration of process types.
     """
+
     TASK = "task"
     THREAD = "thread"
     KTHREAD = "kthread"
@@ -30,6 +30,7 @@ class Process:
                      Can be None if unavailable or you're doing Prac-2.1 .
     :type priority: int | None
     """
+
     pid: int
     command: str
     type: Type

@@ -24,7 +24,9 @@ class UiState:
     __htop: Htop
     __mode: ViewMode = ViewMode.PROCESSES
 
-    def change_view(self, mode: Literal["processes", "priorities", "hup"] | str) -> None:
+    def change_view(
+        self, mode: Literal["processes", "priorities", "hup"] | str
+    ) -> None:
         self.__mode = ViewMode.from_str(mode)
 
     @property
