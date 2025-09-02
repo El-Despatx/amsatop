@@ -16,6 +16,8 @@
           sphinx
           sphinx-rtd-theme
           myst-parser     # optional: markdown support
+          pyfiglet
+          textual
         ]);
     in {
       devShells.${system}.default = pkgs.mkShell {

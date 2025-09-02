@@ -2,7 +2,7 @@ import os
 from abc import ABC, abstractmethod
 from typing import List
 
-from amsatop.htop.process import Process
+from amsatop._htop.process import Process
 
 
 class Htop(ABC):

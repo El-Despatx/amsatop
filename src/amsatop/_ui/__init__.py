@@ -1,6 +1,6 @@
-from amsatop.htop.htop import Htop
-from amsatop.htop.htop_mock import HtopMock
-from amsatop.ui.tui import HtopTUI
+from amsatop._htop.htop import Htop
+from amsatop._htop.htop_mock import HtopMock
+from amsatop._ui.tui import HtopTUI
 
 
 def run_ui(htop: Htop = HtopMock(), refresh: int = 2) -> None:

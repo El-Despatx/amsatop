@@ -2,8 +2,8 @@ from dataclasses import dataclass
 from enum import Enum
 from typing import List, Literal
 
-from amsatop.htop.htop import Htop
-from amsatop.htop.process import Process
+from amsatop._htop.htop import Htop
+from amsatop._htop.process import Process
 
 
 class ViewMode(Enum):

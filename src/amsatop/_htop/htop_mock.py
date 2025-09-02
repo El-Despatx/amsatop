@@ -1,8 +1,8 @@
 import random
 from typing import override
 
-from amsatop.htop.htop import Htop
-from amsatop.htop.process import Process, Type
+from amsatop._htop.htop import Htop
+from amsatop._htop.process import Process, Type
 
 
 class HtopMock(Htop):
@@ -27,7 +27,7 @@ class HtopMock(Htop):
             Process(pid=3, command="kworker", type=Type.KTHREAD, priority=None),
             Process(pid=4, command="python", type=Type.TASK, priority=None),
             Process(pid=5, command="top", type=Type.THREAD, priority=None),
-            Process(pid=6, command="htop", type=Type.TASK, priority=None),
+            Process(pid=6, command="_htop", type=Type.TASK, priority=None),
             Process(pid=7, command="systemd", type=Type.KTHREAD, priority=None),
             Process(pid=8, command="tmux", type=Type.THREAD, priority=None),
             Process(pid=9, command="node", type=Type.TASK, priority=None),

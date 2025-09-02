@@ -3,8 +3,8 @@ from textual.app import App, ComposeResult
 from textual.binding import Binding
 from textual.widgets import DataTable, Footer, Header, Static
 
-from amsatop.htop.htop import Htop
-from amsatop.ui.state import UiState
+from amsatop._htop.htop import Htop
+from amsatop._ui.state import UiState
 
 
 class HtopTUI(App[None]):
