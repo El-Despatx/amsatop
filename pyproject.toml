@@ -9,11 +9,30 @@ authors = [
     { name = "Ferran Aran Domingo", email = "ferran@aranferran.com" }
 ]
 requires-python = ">=3.13"
+license = { file = "LICENSE" }
+keywords = ["htop", "process", "tui", "linux", "terminal", "monitor", "amsatop"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: System :: Monitoring",
+    "Topic :: Utilities",
+    "Framework :: Textual",
+]
 dependencies = [
     "pyfiglet>=1.0.4",
     "textual>=5.3.0",
 ]
 
+[project.urls]
+Homepage = "https://github.com/el-despatx/amsatop"
+Documentation = "https://el-despatx.github.io/amsatop/"
+Source = "https://github.com/el-despatx/amsatop"
+Issues = "https://github.com/el-despatx/amsatop/issues"
 
 [tool.ruff]
 # Match Black’s defaults
