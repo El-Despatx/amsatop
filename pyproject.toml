@@ -21,7 +21,6 @@ classifiers = [
     "Programming Language :: Python :: 3 :: Only",
     "Topic :: System :: Monitoring",
     "Topic :: Utilities",
-    "Framework :: Textual",
 ]
 dependencies = [
     "pyfiglet>=1.0.4",
