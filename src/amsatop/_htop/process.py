@@ -2,12 +2,12 @@ from dataclasses import dataclass
 from enum import Enum
 
 
-class Type(Enum):
+class TaskType(Enum):
     """
-    Enumeration of process types.
+    Enumeration of tasks types.
     """
 
-    TASK = "task"
+    PROCESS = "process"
     THREAD = "thread"
     KTHREAD = "kthread"
 
@@ -24,7 +24,7 @@ class Process:
     :type command: str
 
     :param type: The type of the process
-    :type type: Type
+    :type type: TaskType
 
     :param priority: The scheduling priority of the process.
                      Can be None if unavailable or you're doing Prac-2.1 .
@@ -33,5 +33,5 @@ class Process:
 
     pid: int
     command: str
-    type: Type
+    type: TaskType
     priority: int | None
