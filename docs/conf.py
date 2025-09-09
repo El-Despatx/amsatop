@@ -6,7 +6,7 @@ sys.path.insert(0, os.path.abspath("../src"))
 project = "amsatop"
 project_copyright = "2025-2026, UdL"
 author = "Oriol Agost, Pablo Fraile, Ferran Aran"
-release = "2.0.0"
+release = "2.0.1"
 
 extensions = [
     "sphinx.ext.autodoc",  # Include documentation from docstrings
