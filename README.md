@@ -7,4 +7,4 @@ Exclusively built for AMSA-25-26 subject at UdL.
 
 ## Check the docs
 
-Documentation is available at [https://el-despatx.github.io/amsatop/](https://el-despatx.github.io/amsatop/)
+Documentation is available at [https://docs.amsa.lol](https://docs.amsa.lol/)
