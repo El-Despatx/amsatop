@@ -1,6 +1,6 @@
 [project]
 name = "amsatop"
-version = "0.4.0"
+version = "0.5.0"
 description = "Library for building your own htop from scratch, using python"
 readme = "README.md"
 authors = [
