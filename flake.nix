@@ -19,6 +19,27 @@
           pyfiglet
           textual
         ]);
+        real_file = ''
+            amsatop package
+            ===============
+            
+            Library 
+            ---------------
+            
+            .. automodule:: amsatop
+               :members:
+               :show-inheritance:
+               :undoc-members:
+            
+            
+            Utilities
+            -----------
+            
+            .. toctree::
+               :maxdepth: 4
+            
+               amsatop.utils
+        '';
     in {
       devShells.${system}.default = pkgs.mkShell {
         buildInputs = [ pkgs.uv ];
@@ -33,6 +54,9 @@
 
         buildPhase = ''
           sphinx-apidoc -o docs/_apidoc src/amsatop
+          cat > docs/_apidoc/amsatop.rst << EOF 
+          ${real_file} 
+          EOF
           sphinx-build -b html docs/ build/
         '';
 

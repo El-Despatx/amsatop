@@ -1,5 +1,6 @@
 """
-This module contains logic for making you easier to implement amsatop
+This module provides utility logic to simplify the implementation of amsatop.
+While it's possible to build your solution without it, these components are designed to make your life easier.
 """
 
 from amsatop.utils.__stat_file import StatFile, get_stat_file_from_path
