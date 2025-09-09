@@ -30,7 +30,11 @@ class StatFile:
     starttime: int      # Start time since boot (in jiffies)
 
     @classmethod
-    def __from_stat_line(cls, line: str) -> "StatFile":
+    def from_stat_line(cls, line: str) -> "StatFile":
+        """
+        Get a StatFile from the lines of the file
+        :meta private:
+        """
         first_paren = line.find('(')
         last_paren = line.rfind(')')
         if first_paren == -1 or last_paren == -1:
@@ -69,7 +73,7 @@ class StatFile:
 
 def get_stat_file_from_path(path: str) -> StatFile | None:
     """
-    Given a path, returns a StatFile, which can be usefull for analyzing a process or thread.
+    Given a path, returns a StatFile, which can be useful for analyzing a process or thread.
 
     :param path: path to the stat file (will be usually in the form of /proc/[pid or tgid]/stat
     :returns: StatFile or None if the path doesn't exist.
@@ -81,7 +85,7 @@ def get_stat_file_from_path(path: str) -> StatFile | None:
     try:
         with open(path, "r", encoding="utf-8") as f:
             line = f.readline()
-            return StatFile.__from_stat_line(line)
+            return StatFile.from_stat_line(line)
     except FileNotFoundError:
         return None
     except Exception as e:

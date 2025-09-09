@@ -72,7 +72,11 @@ class StatusFile:
     Umask: str | None = None
 
     @classmethod
-    def __from_lines(cls, lines: List[str]) -> "StatusFile":
+    def from_lines(cls, lines: List[str]) -> "StatusFile":
+        """
+        Get a StatusFile from the lines of the file
+        :meta private:
+        """
         def parse_value(key: str, value: str):
             value = value.strip()
             if not value:
@@ -120,7 +124,7 @@ def get_status_file_from_path(path: str) -> StatusFile | None:
 
     try:
         with open(path, "r", encoding="utf-8") as f:
-            return StatusFile.__from_lines(f.readlines())
+            return StatusFile.from_lines(f.readlines())
     except FileNotFoundError:
         return None
     except Exception as e:
